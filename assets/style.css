@@ -1,0 +1,69 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darkslategray;
+}
+
+.game-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#guessInput {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#feedback {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.guess-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.guess-letter {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 2px;
+    font-size: 24px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+}
+
+.correct {
+    background-color: #4caf50; /* Green for correct letters */
+    color: #fff;
+}
+
+.present {
+    background-color: #ffeb3b; /* Yellow for correct letters but wrong position */
+    color: #000;
+}
+
+.absent {
+    background-color: #9e9e9e; /* Gray for incorrect letters */
+    color: #fff;
+}
